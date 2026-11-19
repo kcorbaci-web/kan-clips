@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Kan Live Clips - User flow</title>
+<style>body{margin:0;background:#fff;font:15px Segoe UI,Arial,sans-serif;color:#111}h1{font-size:22px;margin:18px 24px 4px}p{margin:0 24px 8px;color:#444}</style></head><body>
+<h1>Kan Live Clips — User flow (the owner is the only user)</h1>
+<p>One-time setup, then an automatic loop that uploads Shorts to the owner's own channel.</p>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial" font-size="14">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<style>.b{fill:#f4f6fb;stroke:#334;stroke-width:1.5}.y{fill:#ffecec;stroke:#c00;stroke-width:2}.d{fill:#fff7e0;stroke:#a70;stroke-width:1.5}.t{font-weight:700}.s{font-size:12px;fill:#444}.l{stroke:#333;stroke-width:1.6;fill:none;marker-end:url(#a)}</style>
+<text x="20" y="30" class="t">A. One-time sign-in</text>
+<rect x="20" y="45" width="200" height="80" rx="10" class="b"/><text x="35" y="72" class="t">1. Run youtube-check</text><text x="35" y="94" class="s">owner starts the tool</text>
+<rect x="260" y="45" width="220" height="80" rx="10" class="y"/><text x="275" y="72" class="t">2. Google consent screen</text><text x="275" y="94" class="s">owner signs in, allows</text><text x="275" y="110" class="s">"Manage your YouTube videos"</text>
+<rect x="520" y="45" width="210" height="80" rx="10" class="b"/><text x="535" y="72" class="t">3. Token saved locally</text><text x="535" y="94" class="s">only on owner's computer</text>
+<rect x="770" y="45" width="230" height="80" rx="10" class="b"/><text x="785" y="72" class="t">4. channels.list mine=true</text><text x="785" y="94" class="s">shows "uploads go to channel</text><text x="785" y="110" class="s">'kan'" to confirm the account</text>
+<path d="M220,85 L260,85" class="l"/><path d="M480,85 L520,85" class="l"/><path d="M730,85 L770,85" class="l"/>
+<text x="20" y="180" class="t">B. Automatic publishing loop (every 60 s)</text>
+<rect x="20" y="200" width="210" height="90" rx="10" class="b"/><text x="35" y="228" class="t">5. Hype moment found</text><text x="35" y="250" class="s">in a public Twitch/Kick</text><text x="35" y="266" class="s">GTA VI stream</text>
+<rect x="270" y="200" width="210" height="90" rx="10" class="b"/><text x="285" y="228" class="t">6. Short made</text><text x="285" y="250" class="s">9:16, 28 s, streamer</text><text x="285" y="266" class="s">credited in title/description</text>
+<rect x="520" y="200" width="210" height="90" rx="10" class="b"/><text x="535" y="228" class="t">7. Best clip picked</text><text x="535" y="250" class="s">highest score, recent,</text><text x="535" y="266" class="s">not uploaded before</text>
+<rect x="770" y="200" width="230" height="90" rx="10" class="y"/><text x="785" y="228" class="t">8. videos.insert</text><text x="785" y="250" class="s">upload to owner's channel,</text><text x="785" y="266" class="s">clip marked as uploaded</text>
+<path d="M230,245 L270,245" class="l"/><path d="M480,245 L520,245" class="l"/><path d="M730,245 L770,245" class="l"/>
+<polygon points="885,330 1000,380 885,430 770,380" class="d"/><text x="830" y="376" class="t">Daily quota</text><text x="830" y="394" class="t">left?</text>
+<path d="M885,290 L885,330" class="l"/>
+<path d="M770,380 C600,380 400,380 125,300" class="l"/><text x="420" y="372" class="s">yes → next clip</text>
+<path d="M1000,380 L1050,380 L1050,470 L885,470" class="l"/><text x="1010" y="370" class="s">no</text>
+<rect x="660" y="450" width="225" height="70" rx="10" class="b"/><text x="675" y="478" class="t">9. Wait for quota reset</text><text x="675" y="500" class="s">(midnight Pacific), then resume</text>
+<text x="20" y="560" class="s">C. Revoking: the owner can remove access at myaccount.google.com/permissions at any time; the local token is then deleted. No other users exist.</text>
+</svg></body></html>
