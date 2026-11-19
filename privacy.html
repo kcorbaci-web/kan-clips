@@ -13,7 +13,7 @@
 <h2>YouTube API Services</h2>
 <p>The app uses <b>YouTube API Services</b> to upload videos to the owner's YouTube channel. By using the app you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
 <ul>
-<li><b>What it accesses:</b> through Google sign-in (OAuth) the app asks only for the <code>youtube.upload</code> permission and reads the signed-in channel's ID and name (channels.list) to confirm which channel it uploads to. It does not read, collect or store any other YouTube user data, viewer data, comments or analytics.</li>
+<li><b>What it accesses:</b> through Google sign-in (OAuth) the app asks only for the <code>youtube.upload</code> permission (to upload videos) and the <code>youtube.readonly</code> permission, used only to read the signed-in channel's ID and name (channels.list) to confirm which channel it uploads to. It does not read, collect or store any other YouTube user data, viewer data, comments or analytics.</li>
 <li><b>How it is used:</b> only to upload the owner's Shorts (video, title, description, tags) to the owner's own channel.</li>
 <li><b>Sharing:</b> YouTube API data is not shared with any third party.</li>
 <li><b>Storage:</b> the OAuth token and the channel ID are stored only on the owner's computer. No cookies or other tracking are placed on any device.</li>

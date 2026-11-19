@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#0c0c0c;color:#ddd;font:13px Consolas,monospace}h1{font:bold 18px Segoe UI,Arial;color:#fff;margin:14px 18px 2px}p{font:13px Segoe UI,Arial;color:#aaa;margin:0 18px 10px}pre{margin:0 18px 16px;padding:12px;background:#151515;border:1px solid #333;border-radius:6px;white-space:pre-wrap}b{color:#6f6}</style></head><body>
+<h1>Kan Live Clips — upload interface (owner's terminal)</h1><p>Sign-in check, then the publisher uploading Shorts one at a time to the owner's channel with videos.insert.</p>
+<pre>&gt; python -m live_clipper youtube-check
+[ok] OAuth client file found
+[ok] signed in; uploads go to channel 'kan' (https://youtube.com/channel/UCba0l3oWIoy73rsm-fpBBCA)
+     Uploads are private by default: review them in YouTube Studio before publishing.
+</pre><pre>&gt; python -m live_clipper publish live_output/gta6_launch --privacy public --every 60 --ai-titles
+2026-11-18 23:32:25 title (reaction): GTA 6'da nobk'un KÍT▄ s³r³c³l³­³ne chat'in tepkisi ? #shorts | hook: CHAT KAHKAHAYA BOºULDU
+2026-11-18 23:33:03 <b>uploaded (public)</b> 20261118_225145_twitch_nobk.json -> https://youtube.com/shorts/L7nRuRrMgkQ  [81/300], 16 more waiting
+--
+2026-11-19 02:04:53 title (quote): "VAPE BREAK?" û Jynxzi plays GTA 6 #shorts | hook: CHAT LOSES IT
+2026-11-19 02:05:08 <b>uploaded (public)</b> 20261119_015836_twitch_jynxzi.json -> https://youtube.com/shorts/wZOKnIRh5lA  [82/300], 16 more waiting
+2026-11-19 02:05:20 title (reaction): GTA 6'da burakoyunda'n²n g³lmekten KIRILDIºI o an! #shorts | hook: CHAT KOPTU G¦TT¦
+2026-11-19 02:05:53 <b>uploaded (public)</b> 20261119_011348_kick_burakoyunda.json -> https://youtube.com/shorts/85Mf66vtUHY  [83/300], 14 more waiting
+2026-11-19 02:06:12 title (chat): Chat LOST IT at this xqc GTA 6 moment ? #shorts | hook: WAIT FOR IT
+2026-11-19 02:06:25 <b>uploaded (public)</b> 20261119_014909_kick_xqc.json -> https://youtube.com/shorts/QXjuRhqDCbU  [84/300], 13 more waiting
+--
+2026-11-19 03:16:02 84 public so far (target 300); also posting to tiktok
+2026-11-19 03:18:28 <b>uploaded (public)</b> 20261119_030140_twitch_stableronaldo.json -> https://youtube.com/shorts/JZsGJKWvARA  [85/300], 0 more waiting
+</pre></body></html>
