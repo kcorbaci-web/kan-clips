@@ -7,6 +7,11 @@
 var a = document.getElementById("addr"); a.value = location.href;
 var q = new URLSearchParams(location.search);
 if (q.get("error")) document.getElementById("msg").textContent = "Sign-in was not completed: " + q.get("error") + ". Start the sign-in again.";
+if (!q.get("error") && (q.get("state") || "").indexOf("panel-") === 0) {
+  // started from the Live Clipper control panel on this computer: finish the sign-in there
+  document.getElementById("msg").textContent = "Returning to Live Clipper…";
+  location.replace("http://127.0.0.1:8790/" + location.search);
+}
 document.getElementById("copy").onclick = function () { a.select(); document.execCommand("copy"); this.textContent = "Copied"; };
 </script>
 </main></body></html>
